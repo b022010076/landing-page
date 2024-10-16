@@ -15,7 +15,8 @@ body {
     font-size: 48px;
     color: #f9faf8;
     font-weight: 900;
-    
+    margin: 0;
+    padding: 0;
 }
 
 .header .logo {
@@ -27,10 +28,27 @@ body {
     font-size: 24px;
     color: #f9faf8;
     text-decoration: none;
+    margin: 0;
 }
 
 button.signup-button, .signup {
     background-color: #3882f6;
+}
+
+button {
+    padding: 8px 32px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+}
+
+.hero-text button {
+    border: none;
+    margin-top: 8px;
+}
+
+.signup button {
+    border-color: white;
 }
 
 .information .info-header {
@@ -68,10 +86,18 @@ ul.pages {
 
 .content {
     display: flex;
-    flex: 1;
+    /* flex: 1; */
     justify-content: center;
     align-items: center;
-    padding: 0 64px;
+    padding: 64px 128px;
+    margin: 32px;
+    gap: 16px;
+}
+
+.hero-text {
+    flex: auto;
+    flex-wrap: wrap;
+    max-width: 500px;
 }
 
 
